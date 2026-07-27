@@ -1,0 +1,21 @@
+generated: '2026-07-19'
+method: searched
+source: live probes of /.well-known/* on the Future web host
+host: https://www.future.co
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+notes: >-
+  Future is a consumer B2C fitness-coaching mobile app with no public API or
+  developer surface. No /.well-known discovery documents are published (all
+  probed paths returned HTTP 404 on both www.future.co and future.co). Recorded
+  as a negative-probe result so re-runs are idempotent; no WellKnown/SecurityTxt
+  pointer is wired because nothing was found.

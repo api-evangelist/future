@@ -1,8 +1,14 @@
 aid: future
 name: Future
-description: 'Future is a company surfaced as a portfolio company of kleiner-perkins and added to the
-  API Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: >-
+  Future (Future Research, Inc., future.co) is a consumer fitness technology company that delivers
+  custom, one-on-one personal training through a mobile app. Members are paired with a dedicated
+  certified coach who builds an individualized workout program, provides real-time messaging and
+  accountability check-ins, and adapts the plan over time. The product includes an exercise library
+  with form-guidance videos, flexible scheduling, and Apple Watch integration for workout tracking.
+  Future is a direct-to-consumer subscription service (first month $50, then $199/month with a 30-day
+  money-back guarantee) and does not currently publish a public API, developer portal, or OpenAPI. It
+  is tracked in the API Evangelist network as a Kleiner Perkins portfolio company.
 url: https://raw.githubusercontent.com/api-evangelist/future/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +16,30 @@ x-backed-by:
 - kleiner-perkins
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
+image: https://future.co/images/seo/future-pro-opengraph-image.jpg
 tags:
 - Company
 - Consumer
+- Fitness
+- Health
+- Personal Training
+- Coaching
+- Wellness
+- Mobile App
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +47,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/future-domain-security.yml
 - type: Website
   url: https://www.future.co
+- type: Blog
+  url: https://www.future.co/blog
+- type: Support
+  url: https://faq.future.co
+- type: PrivacyPolicy
+  url: https://www.future.co/privacy
+- type: TermsOfService
+  url: https://www.future.co/terms-and-conditions
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
